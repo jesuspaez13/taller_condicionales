@@ -22,3 +22,18 @@ elif(numero_camisas < 3 and numero_camisas > 0):
     print(f'El valor total serían: {total}')
 else:
     print('El numero de camisas es equivocado')
+
+# Problema 2
+numero_al_azar = int(input('Digite el numero que le salío: '))
+if(numero_al_azar < 74 and numero_al_azar >= 0):
+    valor_compra = int(input('Digite el precio de su compra: '))
+    descuento = valor_compra * 0.15
+    total = valor_compra - descuento
+    print(f'El valor total de su compra es: {total}')
+elif(numero_al_azar >= 74):
+    valor_compra = int(input('Digite el precio de su compra: '))
+    descuento = valor_compra * 0.2
+    total = valor_compra - descuento
+    print(f'El valor total serían: {total}')
+else:
+    print('Ese numero es equivocado')
