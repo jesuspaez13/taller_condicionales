@@ -37,3 +37,16 @@ elif(numero_al_azar >= 74):
     print(f'El valor total serían: {total}')
 else:
     print('Ese numero es equivocado')
+
+# Problema 3
+monto = int(input('Digite el monto de la fianza: '))
+if(monto < 50000 and monto > 0):
+    porcentaje = monto * 0.03
+    cuota = monto + porcentaje
+    print(f'La cuota a pagar va ser de: {cuota}')
+elif(monto >= 50000):
+    porcentaje = monto * 0.02
+    cuota = monto + porcentaje
+    print(f'La cuota a pagar va ser de: {cuota}')
+else:
+    print('El monto ingresado es equivocado')
