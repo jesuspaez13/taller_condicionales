@@ -60,3 +60,12 @@ if(puntos > 170):
     print(f'La perdida es de ${perdida}')
 else:
     print('No tiene sancion, por tanto no tiene perdidas')
+
+# Problema 5
+devaluacion_carro = int(input('Digite la devalución del carro: '))
+incremento_terreno = int(input('Digite el incremento del terreno: '))
+mitad_incremento_terreno = incremento_terreno / 2
+if(devaluacion_carro > mitad_incremento_terreno):
+    print('No comprar el carro')
+else:
+    print('Si comprar el carro')
