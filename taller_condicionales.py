@@ -50,3 +50,13 @@ elif(monto >= 50000):
     print(f'La cuota a pagar va ser de: {cuota}')
 else:
     print('El monto ingresado es equivocado')
+
+# Problema 4
+puntos = int(input('Digite la cantidad de puntos acumulados: '))
+ganancias = int(input('Digite la cantidad de ganancias obtenidas: '))
+if(puntos > 170):
+    multa = ganancias * 0.5
+    perdida = ganancias - multa
+    print(f'La perdida es de ${perdida}')
+else:
+    print('No tiene sancion, por tanto no tiene perdidas')
