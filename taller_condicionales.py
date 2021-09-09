@@ -69,3 +69,19 @@ if(devaluacion_carro > mitad_incremento_terreno):
     print('No comprar el carro')
 else:
     print('Si comprar el carro')
+
+# Problema 6
+numero_computadoras = int(input('Digite la cantidad de computadoras: '))
+subtotal = numero_computadoras * 11000
+if(numero_computadoras < 5):
+    descuento = subtotal * 0.1
+    total = subtotal - descuento
+    print(f'El total a pagar es: ${total}')
+elif(numero_computadoras >= 5 and numero_computadoras < 10):
+    descuento = subtotal * 0.2
+    total = subtotal - descuento
+    print(f'El total a pagar es: ${total}')
+else:
+    descuento = subtotal * 0.4
+    total = subtotal - descuento
+    print(f'El total a pagar es: ${total}')
