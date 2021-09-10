@@ -104,3 +104,24 @@ if(precio_estereo >= 2000):
         print(f'El total a pagar es: ${total}')
 else:
     print(f'El total a pagar es: ${precio_con_iva}, no tiene descuento')
+
+# Problema 8
+monto_compra = int(input('Digite el monto total de la compra: '))
+if(monto_compra > 500000):
+    cantidad_a_invertir = monto_compra * 0.55
+    valor_prestamo = monto_compra * 0.3
+    valor_credito = monto_compra * 0.15
+    interes_credito = valor_credito * 0.2
+    interes_credito_total = interes_credito + valor_credito
+    print(f'La cantidad a invertir es: ${cantidad_a_invertir}')
+    print(f'La cantidad del prestamo es: ${valor_prestamo}')
+    print(f'La cantidad del credito es: ${interes_credito}')
+    print(f'La cantidad del credito con interres es: ${interes_credito_total}')
+else:
+    cantidad_a_invertir = monto_compra * 0.7
+    valor_credito = monto_compra * 0.30
+    interes_credito = valor_credito * 0.2
+    interes_credito_total = interes_credito + valor_credito
+    print(f'La cantidad a invertir es: ${cantidad_a_invertir}')
+    print(f'La cantidad del credito es: ${interes_credito}')
+    print(f'La cantidad del credito con interres es: ${interes_credito_total}')
