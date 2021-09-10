@@ -85,3 +85,22 @@ else:
     descuento = subtotal * 0.4
     total = subtotal - descuento
     print(f'El total a pagar es: ${total}')
+
+# Problema 7
+precio_estereo = int(input('Digite el precio del estéreo: '))
+iva = precio_estereo * 0.16
+precio_con_iva = precio_estereo + iva
+if(precio_estereo >= 2000):
+    marca_estereo = str(input('Digite la marca del estéreo: '))
+    if(marca_estereo == "NOSY"):
+        descuento1 = precio_estereo * 0.1
+        subtotal = precio_con_iva - descuento1
+        descuento2 = subtotal * 0.05
+        total = subtotal - descuento2
+        print(f'El total a pagar es: ${total}')
+    else:
+        descuento = precio_estereo * 0.1
+        total = precio_con_iva - descuento
+        print(f'El total a pagar es: ${total}')
+else:
+    print(f'El total a pagar es: ${precio_con_iva}, no tiene descuento')
