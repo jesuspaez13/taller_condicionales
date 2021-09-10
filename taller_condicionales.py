@@ -125,3 +125,16 @@ else:
     print(f'La cantidad a invertir es: ${cantidad_a_invertir}')
     print(f'La cantidad del credito es: ${interes_credito}')
     print(f'La cantidad del credito con interres es: ${interes_credito_total}')
+
+# Problema 9
+numero_uno = int(input('Digite el primer número: '))
+numero_dos = int(input('Digite el segundo número: '))
+if(numero_uno == numero_dos):
+    multiplicacion = numero_uno * numero_dos
+    print(f'El resultado es: {multiplicacion}')
+elif(numero_uno > numero_dos):
+    resta = numero_uno - numero_dos
+    print(f'El resultado es: {resta}')
+else:
+    suma = numero_uno + numero_dos
+    print(f'El resultado es: {suma}')
