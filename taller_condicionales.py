@@ -138,3 +138,14 @@ elif(numero_uno > numero_dos):
 else:
     suma = numero_uno + numero_dos
     print(f'El resultado es: {suma}')
+
+# Problema 10
+primer_numero = int(input('Digite el primer número: '))
+segundo_numero = int(input('Digite el segundo número: '))
+tercer_numero = int(input('Digite el tercer número: '))
+if(primer_numero >= segundo_numero and primer_numero >= tercer_numero):
+    print(f'El número mayor es: {primer_numero}')
+elif(segundo_numero >= primer_numero and segundo_numero >= tercer_numero):
+    print(f'El número mayor es: {segundo_numero}')
+else:
+    print(f'El número mayor es: {tercer_numero}')
